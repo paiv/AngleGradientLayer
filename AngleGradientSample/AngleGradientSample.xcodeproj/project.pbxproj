@@ -1,0 +1,337 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C40F40D614E71A7B00566C8F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C40F40D514E71A7B00566C8F /* UIKit.framework */; };
+		C40F40D814E71A7B00566C8F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C40F40D714E71A7B00566C8F /* Foundation.framework */; };
+		C40F40DA14E71A7B00566C8F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C40F40D914E71A7B00566C8F /* CoreGraphics.framework */; };
+		C40F40E014E71A7B00566C8F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C40F40DE14E71A7B00566C8F /* InfoPlist.strings */; };
+		C40F40E214E71A7B00566C8F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C40F40E114E71A7B00566C8F /* main.m */; };
+		C40F40E614E71A7B00566C8F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C40F40E514E71A7B00566C8F /* AppDelegate.m */; };
+		C40F40F314E71B3800566C8F /* SampleController.m in Sources */ = {isa = PBXBuildFile; fileRef = C40F40F214E71B3800566C8F /* SampleController.m */; };
+		C40F40F514E71C1600566C8F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C40F40F414E71C1600566C8F /* QuartzCore.framework */; };
+		C40F40F814E71D0700566C8F /* UserControl1.m in Sources */ = {isa = PBXBuildFile; fileRef = C40F40F714E71D0700566C8F /* UserControl1.m */; };
+		C40F410214E75C9A00566C8F /* UserControl2.m in Sources */ = {isa = PBXBuildFile; fileRef = C40F410114E75C9900566C8F /* UserControl2.m */; };
+		C40F410514E761FD00566C8F /* UserControl3.m in Sources */ = {isa = PBXBuildFile; fileRef = C40F410414E761FD00566C8F /* UserControl3.m */; };
+		C40F410814E7663100566C8F /* UserControl4.m in Sources */ = {isa = PBXBuildFile; fileRef = C40F410714E7663100566C8F /* UserControl4.m */; };
+		C40F410C14E7693400566C8F /* UserControl5.m in Sources */ = {isa = PBXBuildFile; fileRef = C40F410B14E7693400566C8F /* UserControl5.m */; };
+		C49C2FB314E7E9D200E36420 /* UserControl6.m in Sources */ = {isa = PBXBuildFile; fileRef = C49C2FB214E7E9D200E36420 /* UserControl6.m */; };
+		C49C2FB714E811EE00E36420 /* AngleGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = C49C2FB614E811EE00E36420 /* AngleGradientLayer.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C40F40D114E71A7B00566C8F /* AngleGradientSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AngleGradientSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C40F40D514E71A7B00566C8F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C40F40D714E71A7B00566C8F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C40F40D914E71A7B00566C8F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C40F40DD14E71A7B00566C8F /* AngleGradientSample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AngleGradientSample-Info.plist"; sourceTree = "<group>"; };
+		C40F40DF14E71A7B00566C8F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C40F40E114E71A7B00566C8F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C40F40E314E71A7B00566C8F /* AngleGradientSample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AngleGradientSample-Prefix.pch"; sourceTree = "<group>"; };
+		C40F40E414E71A7B00566C8F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C40F40E514E71A7B00566C8F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C40F40F114E71B3800566C8F /* SampleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleController.h; sourceTree = "<group>"; };
+		C40F40F214E71B3800566C8F /* SampleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleController.m; sourceTree = "<group>"; };
+		C40F40F414E71C1600566C8F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		C40F40F614E71D0700566C8F /* UserControl1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserControl1.h; sourceTree = "<group>"; };
+		C40F40F714E71D0700566C8F /* UserControl1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserControl1.m; sourceTree = "<group>"; };
+		C40F410014E75C9900566C8F /* UserControl2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserControl2.h; sourceTree = "<group>"; };
+		C40F410114E75C9900566C8F /* UserControl2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserControl2.m; sourceTree = "<group>"; };
+		C40F410314E761FD00566C8F /* UserControl3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserControl3.h; sourceTree = "<group>"; };
+		C40F410414E761FD00566C8F /* UserControl3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserControl3.m; sourceTree = "<group>"; };
+		C40F410614E7663100566C8F /* UserControl4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserControl4.h; sourceTree = "<group>"; };
+		C40F410714E7663100566C8F /* UserControl4.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserControl4.m; sourceTree = "<group>"; };
+		C40F410A14E7693400566C8F /* UserControl5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserControl5.h; sourceTree = "<group>"; };
+		C40F410B14E7693400566C8F /* UserControl5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserControl5.m; sourceTree = "<group>"; };
+		C49C2FB114E7E9D200E36420 /* UserControl6.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserControl6.h; sourceTree = "<group>"; };
+		C49C2FB214E7E9D200E36420 /* UserControl6.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserControl6.m; sourceTree = "<group>"; };
+		C49C2FB514E811EE00E36420 /* AngleGradientLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AngleGradientLayer.h; sourceTree = "<group>"; };
+		C49C2FB614E811EE00E36420 /* AngleGradientLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AngleGradientLayer.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C40F40CE14E71A7A00566C8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C40F40D614E71A7B00566C8F /* UIKit.framework in Frameworks */,
+				C40F40D814E71A7B00566C8F /* Foundation.framework in Frameworks */,
+				C40F40DA14E71A7B00566C8F /* CoreGraphics.framework in Frameworks */,
+				C40F40F514E71C1600566C8F /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C40F40C614E71A7A00566C8F = {
+			isa = PBXGroup;
+			children = (
+				C49C2FB414E811EE00E36420 /* AngleGradient */,
+				C40F40DB14E71A7B00566C8F /* AngleGradientSample */,
+				C40F40D414E71A7B00566C8F /* Frameworks */,
+				C40F40D214E71A7B00566C8F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C40F40D214E71A7B00566C8F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C40F40D114E71A7B00566C8F /* AngleGradientSample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C40F40D414E71A7B00566C8F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C40F40D514E71A7B00566C8F /* UIKit.framework */,
+				C40F40D714E71A7B00566C8F /* Foundation.framework */,
+				C40F40D914E71A7B00566C8F /* CoreGraphics.framework */,
+				C40F40F414E71C1600566C8F /* QuartzCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C40F40DB14E71A7B00566C8F /* AngleGradientSample */ = {
+			isa = PBXGroup;
+			children = (
+				C40F40E414E71A7B00566C8F /* AppDelegate.h */,
+				C40F40E514E71A7B00566C8F /* AppDelegate.m */,
+				C40F40F114E71B3800566C8F /* SampleController.h */,
+				C40F40F214E71B3800566C8F /* SampleController.m */,
+				C40F410914E766F300566C8F /* Samples */,
+				C40F40DC14E71A7B00566C8F /* Supporting Files */,
+			);
+			path = AngleGradientSample;
+			sourceTree = "<group>";
+		};
+		C40F40DC14E71A7B00566C8F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C40F40DD14E71A7B00566C8F /* AngleGradientSample-Info.plist */,
+				C40F40DE14E71A7B00566C8F /* InfoPlist.strings */,
+				C40F40E114E71A7B00566C8F /* main.m */,
+				C40F40E314E71A7B00566C8F /* AngleGradientSample-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C40F410914E766F300566C8F /* Samples */ = {
+			isa = PBXGroup;
+			children = (
+				C40F40F614E71D0700566C8F /* UserControl1.h */,
+				C40F40F714E71D0700566C8F /* UserControl1.m */,
+				C40F410014E75C9900566C8F /* UserControl2.h */,
+				C40F410114E75C9900566C8F /* UserControl2.m */,
+				C40F410314E761FD00566C8F /* UserControl3.h */,
+				C40F410414E761FD00566C8F /* UserControl3.m */,
+				C40F410614E7663100566C8F /* UserControl4.h */,
+				C40F410714E7663100566C8F /* UserControl4.m */,
+				C40F410A14E7693400566C8F /* UserControl5.h */,
+				C40F410B14E7693400566C8F /* UserControl5.m */,
+				C49C2FB114E7E9D200E36420 /* UserControl6.h */,
+				C49C2FB214E7E9D200E36420 /* UserControl6.m */,
+			);
+			name = Samples;
+			sourceTree = "<group>";
+		};
+		C49C2FB414E811EE00E36420 /* AngleGradient */ = {
+			isa = PBXGroup;
+			children = (
+				C49C2FB514E811EE00E36420 /* AngleGradientLayer.h */,
+				C49C2FB614E811EE00E36420 /* AngleGradientLayer.m */,
+			);
+			path = AngleGradient;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C40F40D014E71A7A00566C8F /* AngleGradientSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C40F40E914E71A7B00566C8F /* Build configuration list for PBXNativeTarget "AngleGradientSample" */;
+			buildPhases = (
+				C40F40CD14E71A7A00566C8F /* Sources */,
+				C40F40CE14E71A7A00566C8F /* Frameworks */,
+				C40F40CF14E71A7A00566C8F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AngleGradientSample;
+			productName = AngleGradientSample;
+			productReference = C40F40D114E71A7B00566C8F /* AngleGradientSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C40F40C814E71A7A00566C8F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "Archer Software";
+			};
+			buildConfigurationList = C40F40CB14E71A7A00566C8F /* Build configuration list for PBXProject "AngleGradientSample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C40F40C614E71A7A00566C8F;
+			productRefGroup = C40F40D214E71A7B00566C8F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C40F40D014E71A7A00566C8F /* AngleGradientSample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C40F40CF14E71A7A00566C8F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C40F40E014E71A7B00566C8F /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C40F40CD14E71A7A00566C8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C40F40E214E71A7B00566C8F /* main.m in Sources */,
+				C40F40E614E71A7B00566C8F /* AppDelegate.m in Sources */,
+				C40F40F314E71B3800566C8F /* SampleController.m in Sources */,
+				C40F40F814E71D0700566C8F /* UserControl1.m in Sources */,
+				C40F410214E75C9A00566C8F /* UserControl2.m in Sources */,
+				C40F410514E761FD00566C8F /* UserControl3.m in Sources */,
+				C40F410814E7663100566C8F /* UserControl4.m in Sources */,
+				C40F410C14E7693400566C8F /* UserControl5.m in Sources */,
+				C49C2FB314E7E9D200E36420 /* UserControl6.m in Sources */,
+				C49C2FB714E811EE00E36420 /* AngleGradientLayer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C40F40DE14E71A7B00566C8F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C40F40DF14E71A7B00566C8F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C40F40E714E71A7B00566C8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					armv6,
+					armv7,
+				);
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C40F40E814E71A7B00566C8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					armv6,
+					armv7,
+				);
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C40F40EA14E71A7B00566C8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AngleGradientSample/AngleGradientSample-Prefix.pch";
+				INFOPLIST_FILE = "AngleGradientSample/AngleGradientSample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C40F40EB14E71A7B00566C8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AngleGradientSample/AngleGradientSample-Prefix.pch";
+				INFOPLIST_FILE = "AngleGradientSample/AngleGradientSample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C40F40CB14E71A7A00566C8F /* Build configuration list for PBXProject "AngleGradientSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C40F40E714E71A7B00566C8F /* Debug */,
+				C40F40E814E71A7B00566C8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C40F40E914E71A7B00566C8F /* Build configuration list for PBXNativeTarget "AngleGradientSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C40F40EA14E71A7B00566C8F /* Debug */,
+				C40F40EB14E71A7B00566C8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C40F40C814E71A7A00566C8F /* Project object */;
+}
