@@ -2,7 +2,7 @@ h2. AngleGradientLayer
 
 *AngleGradientLayer* is a *CALayer* implementation of angle gradient.
 
-!screenshot.png!
+!https://github.com/pavel11/AngleGradientLayer/raw/master/screenshot.png(screenshot)!
 
 h2. Sample usage with UIView
 
