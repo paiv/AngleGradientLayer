@@ -35,3 +35,6 @@ bc.. #import "AngleGradientLayer.h"
 }
 
 @end
+
+h2. TODO
+# Add optional anti-aliasing to the algorithm
