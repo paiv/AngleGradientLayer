@@ -22,7 +22,6 @@
 		return nil;
 	
 	self.backgroundColor = [UIColor clearColor];
-//	self.opaque = NO;
 	
 	NSMutableArray *colors = [[NSMutableArray alloc] initWithCapacity:4];
 	NSMutableArray *locations = [[NSMutableArray alloc] initWithCapacity:16];
