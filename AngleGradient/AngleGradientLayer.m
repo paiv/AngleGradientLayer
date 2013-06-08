@@ -28,6 +28,12 @@
 
 #import "AngleGradientLayer.h"
 
+#if __has_feature(objc_arc)
+#define BRIDGE_CAST(T) (__bridge T)
+#else
+#define BRIDGE_CAST(T) (T)
+#endif
+
 #define byte unsigned char
 #define F2CC(x) ((byte)(255 * x))
 #define RGBAF(r,g,b,a) (F2CC(r) << 24 | F2CC(g) << 16 | F2CC(b) << 8 | F2CC(a))
@@ -96,7 +102,7 @@ static void angleGradient(byte* data, int w, int h, int* colors, int colorCount,
 		colors = calloc(colorCount, bpp);
 		int *p = colors;
 		for (id cg in self.colors) {
-			CGColorRef c = (__bridge CGColorRef)cg;
+			CGColorRef c = BRIDGE_CAST(CGColorRef)cg;
 			float r, g, b, a;
 			
 			size_t n = CGColorGetNumberOfComponents(c);
