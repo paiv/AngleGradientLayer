@@ -29,7 +29,6 @@
 #import "AngleGradientLayer.h"
 
 #define byte unsigned char
-#define uint unsigned int
 #define F2CC(x) ((byte)(255 * x))
 #define RGBAF(r,g,b,a) (F2CC(r) << 24 | F2CC(g) << 16 | F2CC(b) << 8 | F2CC(a))
 #define RGBA(r,g,b,a) ((byte)r << 24 | (byte)g << 16 | (byte)b << 8 | (byte)a)
@@ -50,9 +49,6 @@ static void angleGradient(byte* data, int w, int h, int* colors, int colorCount,
 
 @implementation AngleGradientLayer
 
-@synthesize colors = _colors;
-@synthesize locations = _locations;
-
 - (id)init
 {
 	if (!(self = [super init]))
@@ -63,12 +59,14 @@ static void angleGradient(byte* data, int w, int h, int* colors, int colorCount,
 	return self;
 }
 
+#if !__has_feature(objc_arc)
 - (void)dealloc
 {
 	[_colors release];
 	[_locations release];
 	[super dealloc];
 }
+#endif
 
 - (void)drawInContext:(CGContextRef)ctx
 {
@@ -98,16 +96,25 @@ static void angleGradient(byte* data, int w, int h, int* colors, int colorCount,
 		colors = calloc(colorCount, bpp);
 		int *p = colors;
 		for (id cg in self.colors) {
+			CGColorRef c = (__bridge CGColorRef)cg;
 			float r, g, b, a;
-			UIColor *c = [[UIColor alloc] initWithCGColor:(CGColorRef)cg];
-			if (![c getRed:&r green:&g blue:&b alpha:&a]) {
-				if (![c getWhite:&r alpha:&a]) {
-					[c release];
-					continue;
-				}
-				g = b = r;
+			
+			size_t n = CGColorGetNumberOfComponents(c);
+			const CGFloat *comps = CGColorGetComponents(c);
+			if (comps == NULL) {
+				*p++ = 0;
+				continue;
 			}
-			[c release];
+			r = comps[0];
+			if (n >= 4) {
+				g = comps[1];
+				b = comps[2];
+				a = comps[3];
+			}
+			else {
+				g = b = r;
+				a = comps[1];
+			}
 			*p++ = RGBAF(r, g, b, a);
 		}
 	}
