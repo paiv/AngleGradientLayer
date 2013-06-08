@@ -35,7 +35,6 @@
 	
 	AngleGradientLayer *l = (AngleGradientLayer *)self.layer;
 	l.colors = colors;
-	[colors release];
 	
 	l.cornerRadius = CGRectGetWidth(self.bounds) / 2;
 	self.clipsToBounds = YES;

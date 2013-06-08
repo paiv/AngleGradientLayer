@@ -30,7 +30,6 @@
 	
 	AngleGradientLayer *l = (AngleGradientLayer *)self.layer;
 	l.colors = colors;
-	[colors release];
 		
 	self.transform = CGAffineTransformMakeRotation(0.75 * M_PI);
 	

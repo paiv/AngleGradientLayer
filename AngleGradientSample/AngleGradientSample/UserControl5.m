@@ -56,9 +56,6 @@
 	l.colors = colors;
 	l.locations = locations;
 
-	[colors release];
-	[locations release];
-	
 	l.cornerRadius = CGRectGetWidth(self.bounds) / 2;
 	self.clipsToBounds = YES;
 //	self.transform = CGAffineTransformMakeRotation(0.25 * M_PI_2);

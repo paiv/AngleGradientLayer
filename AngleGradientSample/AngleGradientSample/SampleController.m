@@ -17,27 +17,18 @@
 
 @interface SampleController()
 
-@property(retain, nonatomic) UIControl *uc5;
+@property(strong, nonatomic) UIControl *uc5;
 
 @end
 
 
 @implementation SampleController
 
-@synthesize uc5 = _uc5;
-
-
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
 	if (!(self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]))
 		return nil;
 	return self;
-}
-
-- (void)dealloc
-{
-	[_uc5 release];
-	[super dealloc];
 }
 
 - (void)didReceiveMemoryWarning
@@ -61,34 +52,28 @@
 {
 	CGRect rect = [UIScreen mainScreen].applicationFrame;
 	UIScrollView *v = [[UIScrollView alloc] initWithFrame:rect];
-	v.backgroundColor = [UIColor magentaColor];
+	v.backgroundColor = [UIColor whiteColor];
 
 	UserControl1 *uc1 = [[UserControl1 alloc] initWithFrame:v.bounds];
 	[v addSubview:uc1];
-	[uc1 release];
 	
 	UserControl2 *uc2 = [[UserControl2 alloc] initWithFrame:CGRectMake(5, 5, 88, 88)];
 	[v addSubview:uc2];
-	[uc2 release];
 	
 	UserControl3 *uc3 = [[UserControl3 alloc] initWithFrame:CGRectMake(155, 95, 66, 66)];
 	[v addSubview:uc3];
-	[uc3 release];
 	
 	UserControl4 *uc4 = [[UserControl4 alloc] initWithFrame:CGRectMake(190, 305, 120, 120)];
 	[v addSubview:uc4];
-	[uc4 release];
 	
 	_uc5 = [[UserControl5 alloc] initWithFrame:CGRectMake(15, 335, 100, 100)];
 	[v addSubview:_uc5];
 	
 	UserControl6 *uc6 = [[UserControl6 alloc] initWithFrame:CGRectMake(-10, 225, 135, 135)];
 	[v addSubview:uc6];
-	[uc6 release];
 
 	v.contentSize = uc1.frame.size;
 	self.view = v;
-	[v release];
 }
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.

@@ -38,9 +38,6 @@
 	l.colors = colors;
 	l.locations = locations;
 	
-	[colors release];
-	[locations release];
-	
 	return self;
 }
 

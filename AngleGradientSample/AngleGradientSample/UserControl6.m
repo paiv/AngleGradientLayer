@@ -21,7 +21,8 @@
 	if (!(self = [super initWithFrame:frame]))
 		return nil;
 	
-	self.backgroundColor = [UIColor whiteColor];
+	self.backgroundColor = [UIColor clearColor];
+//	self.opaque = NO;
 	
 	NSMutableArray *colors = [[NSMutableArray alloc] initWithCapacity:4];
 	NSMutableArray *locations = [[NSMutableArray alloc] initWithCapacity:16];
@@ -44,14 +45,12 @@
 	l.colors = colors;
 	l.locations = locations;
 	
-	[colors release];
-	[locations release];
-	
 //	l.cornerRadius = CGRectGetWidth(self.bounds) / 2;
 //	self.clipsToBounds = YES;
 	self.transform = CGAffineTransformMakeRotation(0.25 * M_PI_2);
-	
+
 	return self;
 }
+
 
 @end
