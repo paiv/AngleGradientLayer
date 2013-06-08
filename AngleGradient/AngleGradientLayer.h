@@ -21,7 +21,7 @@
 //
 //
 //  AngleGradientLayer.h
-//  AngleGradientSample
+//  paiv
 //
 //  Created by Pavel Ivashkov on 2012-02-12.
 //
