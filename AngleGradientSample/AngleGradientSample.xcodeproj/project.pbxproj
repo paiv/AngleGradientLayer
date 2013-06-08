@@ -22,7 +22,7 @@
 		C40F410C14E7693400566C8F /* UserControl5.m in Sources */ = {isa = PBXBuildFile; fileRef = C40F410B14E7693400566C8F /* UserControl5.m */; };
 		C42DE8FE1762632700006619 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C42DE8FD1762632700006619 /* Default-568h@2x.png */; };
 		C49C2FB314E7E9D200E36420 /* UserControl6.m in Sources */ = {isa = PBXBuildFile; fileRef = C49C2FB214E7E9D200E36420 /* UserControl6.m */; };
-		C49C2FB714E811EE00E36420 /* AngleGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = C49C2FB614E811EE00E36420 /* AngleGradientLayer.m */; };
+		C4B07AED176355AE004FA222 /* AngleGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = C4B07AEC176355AE004FA222 /* AngleGradientLayer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,8 +52,8 @@
 		C42DE8FD1762632700006619 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
 		C49C2FB114E7E9D200E36420 /* UserControl6.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserControl6.h; sourceTree = "<group>"; };
 		C49C2FB214E7E9D200E36420 /* UserControl6.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserControl6.m; sourceTree = "<group>"; };
-		C49C2FB514E811EE00E36420 /* AngleGradientLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AngleGradientLayer.h; sourceTree = "<group>"; };
-		C49C2FB614E811EE00E36420 /* AngleGradientLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AngleGradientLayer.m; sourceTree = "<group>"; };
+		C4B07AEB176355AE004FA222 /* AngleGradientLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AngleGradientLayer.h; sourceTree = "<group>"; };
+		C4B07AEC176355AE004FA222 /* AngleGradientLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AngleGradientLayer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +74,7 @@
 		C40F40C614E71A7A00566C8F = {
 			isa = PBXGroup;
 			children = (
-				C49C2FB414E811EE00E36420 /* AngleGradient */,
+				C4B07AEA176355AE004FA222 /* AngleGradient */,
 				C40F40DB14E71A7B00566C8F /* AngleGradientSample */,
 				C40F40D414E71A7B00566C8F /* Frameworks */,
 				C40F40D214E71A7B00566C8F /* Products */,
@@ -144,13 +144,14 @@
 			name = Samples;
 			sourceTree = "<group>";
 		};
-		C49C2FB414E811EE00E36420 /* AngleGradient */ = {
+		C4B07AEA176355AE004FA222 /* AngleGradient */ = {
 			isa = PBXGroup;
 			children = (
-				C49C2FB514E811EE00E36420 /* AngleGradientLayer.h */,
-				C49C2FB614E811EE00E36420 /* AngleGradientLayer.m */,
+				C4B07AEB176355AE004FA222 /* AngleGradientLayer.h */,
+				C4B07AEC176355AE004FA222 /* AngleGradientLayer.m */,
 			);
-			path = AngleGradient;
+			name = AngleGradient;
+			path = ../AngleGradient;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,7 +226,7 @@
 				C40F410814E7663100566C8F /* UserControl4.m in Sources */,
 				C40F410C14E7693400566C8F /* UserControl5.m in Sources */,
 				C49C2FB314E7E9D200E36420 /* UserControl6.m in Sources */,
-				C49C2FB714E811EE00E36420 /* AngleGradientLayer.m in Sources */,
+				C4B07AED176355AE004FA222 /* AngleGradientLayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
