@@ -162,6 +162,14 @@ static inline int lerp(int a, int b, float w)
 				blerp(RGBA_B(a), RGBA_B(b), w),
 				blerp(RGBA_A(a), RGBA_A(b), w));
 }
+static inline int multiplyByAlpha(int c)
+{
+	float a = RGBA_A(c) / 255.0;
+	return RGBA((byte)(RGBA_R(c) * a),
+				(byte)(RGBA_G(c) * a),
+				(byte)(RGBA_B(c) * a),
+				RGBA_A(c));
+}
 
 void angleGradient(byte* data, int w, int h, int* colors, int colorCount, float* locations, int locationCount)
 {
@@ -206,6 +214,7 @@ void angleGradient(byte* data, int w, int h, int* colors, int colorCount, float*
 		int lc = colors[index];
 		int rc = colors[nextIndex];
 		int color = lerp(lc, rc, t);
+		color = multiplyByAlpha(color);
 		*p++ = color;
 	}
 }
