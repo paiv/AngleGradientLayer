@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		08D45AB418B8F22800B7155D /* AngleGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 08D45AB318B8F22800B7155D /* AngleGradientView.m */; };
+		08D45AB718B935AC00B7155D /* UserControl7.m in Sources */ = {isa = PBXBuildFile; fileRef = 08D45AB618B935AC00B7155D /* UserControl7.m */; };
 		C40F40D614E71A7B00566C8F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C40F40D514E71A7B00566C8F /* UIKit.framework */; };
 		C40F40D814E71A7B00566C8F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C40F40D714E71A7B00566C8F /* Foundation.framework */; };
 		C40F40DA14E71A7B00566C8F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C40F40D914E71A7B00566C8F /* CoreGraphics.framework */; };
@@ -26,6 +28,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		08D45AB218B8F22800B7155D /* AngleGradientView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AngleGradientView.h; sourceTree = "<group>"; };
+		08D45AB318B8F22800B7155D /* AngleGradientView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AngleGradientView.m; sourceTree = "<group>"; };
+		08D45AB518B935AC00B7155D /* UserControl7.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserControl7.h; sourceTree = "<group>"; };
+		08D45AB618B935AC00B7155D /* UserControl7.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserControl7.m; sourceTree = "<group>"; };
 		C40F40D114E71A7B00566C8F /* AngleGradientSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AngleGradientSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C40F40D514E71A7B00566C8F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C40F40D714E71A7B00566C8F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -140,6 +146,8 @@
 				C40F410B14E7693400566C8F /* UserControl5.m */,
 				C49C2FB114E7E9D200E36420 /* UserControl6.h */,
 				C49C2FB214E7E9D200E36420 /* UserControl6.m */,
+				08D45AB518B935AC00B7155D /* UserControl7.h */,
+				08D45AB618B935AC00B7155D /* UserControl7.m */,
 			);
 			name = Samples;
 			sourceTree = "<group>";
@@ -149,6 +157,8 @@
 			children = (
 				C4B07AEB176355AE004FA222 /* AngleGradientLayer.h */,
 				C4B07AEC176355AE004FA222 /* AngleGradientLayer.m */,
+				08D45AB218B8F22800B7155D /* AngleGradientView.h */,
+				08D45AB318B8F22800B7155D /* AngleGradientView.m */,
 			);
 			name = AngleGradient;
 			path = ../AngleGradient;
@@ -219,11 +229,13 @@
 			files = (
 				C40F40E214E71A7B00566C8F /* main.m in Sources */,
 				C40F40E614E71A7B00566C8F /* AppDelegate.m in Sources */,
+				08D45AB418B8F22800B7155D /* AngleGradientView.m in Sources */,
 				C40F40F314E71B3800566C8F /* SampleController.m in Sources */,
 				C40F40F814E71D0700566C8F /* UserControl1.m in Sources */,
 				C40F410214E75C9A00566C8F /* UserControl2.m in Sources */,
 				C40F410514E761FD00566C8F /* UserControl3.m in Sources */,
 				C40F410814E7663100566C8F /* UserControl4.m in Sources */,
+				08D45AB718B935AC00B7155D /* UserControl7.m in Sources */,
 				C40F410C14E7693400566C8F /* UserControl5.m in Sources */,
 				C49C2FB314E7E9D200E36420 /* UserControl6.m in Sources */,
 				C4B07AED176355AE004FA222 /* AngleGradientLayer.m in Sources */,

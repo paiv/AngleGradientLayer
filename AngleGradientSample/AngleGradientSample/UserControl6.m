@@ -5,24 +5,16 @@
 //  Created by Pavel Ivashkov on 2012-02-12.
 //
 
-#import "AngleGradientLayer.h"
 #import "UserControl6.h"
 
 
 @implementation UserControl6
 
-+ (Class)layerClass
-{
-	return [AngleGradientLayer class];
-}
-
 - (id)initWithFrame:(CGRect)frame
 {
 	if (!(self = [super initWithFrame:frame]))
 		return nil;
-	
-	self.backgroundColor = [UIColor clearColor];
-	
+		
 	NSMutableArray *colors = [[NSMutableArray alloc] initWithCapacity:4];
 	NSMutableArray *locations = [[NSMutableArray alloc] initWithCapacity:16];
 	
@@ -40,12 +32,9 @@
 	for (int i = 0; i < sizeof(fa)/sizeof(fa[0]); i++)
 		[locations addObject:[NSNumber numberWithFloat:fa[i] / 360.0]];
 	
-	AngleGradientLayer *l = (AngleGradientLayer *)self.layer;
-	l.colors = colors;
-	l.locations = locations;
+	self.colors = colors;
+	self.locations = locations;
 	
-//	l.cornerRadius = CGRectGetWidth(self.bounds) / 2;
-//	self.clipsToBounds = YES;
 	self.transform = CGAffineTransformMakeRotation(0.25 * M_PI_2);
 
 	return self;

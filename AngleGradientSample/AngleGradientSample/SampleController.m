@@ -13,11 +13,12 @@
 #import "UserControl4.h"
 #import "UserControl5.h"
 #import "UserControl6.h"
+#import "UserControl7.h"
 
 
 @interface SampleController()
 
-@property(strong, nonatomic) UIControl *uc5;
+@property(strong, nonatomic) UIView *uc5;
 
 @end
 
@@ -79,6 +80,9 @@
 	UserControl6 *uc6 = [[UserControl6 alloc] initWithFrame:CGRectMake(-10, 225, 135, 135)];
 	[v addSubview:uc6];
 
+    UserControl7 *uc7 = [[UserControl7 alloc] initWithFrame:CGRectMake(50, 75, 90, 90)];
+	[v addSubview:uc7];
+    
 	v.contentSize = uc1.frame.size;
 	self.view = v;
 }
