@@ -13,9 +13,7 @@
 {
 	if (!(self = [super initWithFrame:frame]))
 		return nil;
-	
-	self.backgroundColor = [UIColor whiteColor];
-	
+		
 	NSMutableArray *colors = [[NSMutableArray alloc] initWithCapacity:4];
 	NSMutableArray *locations = [[NSMutableArray alloc] initWithCapacity:16];
 	
@@ -48,8 +46,7 @@
 	self.colors = colors;
 	self.locations = locations;
 
-	self.layer.cornerRadius = CGRectGetWidth(self.bounds) / 2;
-	self.clipsToBounds = YES;
+	[self applyRoundMask];
 	
 	return self;
 }

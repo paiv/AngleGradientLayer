@@ -25,6 +25,9 @@
 		
 	self.transform = CGAffineTransformMakeRotation(0.75 * M_PI);
 	
+    self.borderColor = [UIColor blueColor];
+    self.borderWidth = 3;
+    
 	return self;
 }
 

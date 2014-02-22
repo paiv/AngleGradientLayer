@@ -40,7 +40,20 @@
 @interface AngleGradientView : ANGLE_GRADIENT_SUPERCLASS
 
 @property(strong, nonatomic) AngleGradientLayer *angleGradientLayer;
+@property(strong, nonatomic) UIBezierPath *maskBezierPath;
+@property(strong, nonatomic) CAShapeLayer *outlineLayer;
+@property(strong, nonatomic) UIBezierPath *outlineBezierPath;
+
+@property(strong, nonatomic) UIColor *borderColor;
+@property(nonatomic) CGFloat borderWidth;
+
 @property(strong, nonatomic) NSArray *colors;
 @property(strong, nonatomic) NSArray *locations;
+
+-(void)setOutlineBezierPath:(UIBezierPath *)outlineBezierPath
+                strokeColor:(UIColor*)strokeColor
+                  lineWidth:(CGFloat)lineWidth;
+
+-(void)applyRoundMask;
 
 @end

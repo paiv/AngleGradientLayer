@@ -13,9 +13,7 @@
 {
 	if (!(self = [super initWithFrame:frame]))
 		return nil;
-	
-	self.backgroundColor = [UIColor whiteColor];
-	
+
 	NSMutableArray *colors = [[NSMutableArray alloc] initWithCapacity:16];
 	
 	[colors addObject:(id)[UIColor colorWithWhite:0.65 alpha:1].CGColor];
@@ -31,10 +29,9 @@
 	
 	self.colors = colors;
 	
-	self.layer.cornerRadius = CGRectGetWidth(self.bounds) / 2;
-	self.clipsToBounds = YES;
-	self.layer.borderColor = [UIColor colorWithWhite:0.55 alpha:1].CGColor;
-	self.layer.borderWidth = 1;
+    [self applyRoundMask];
+    self.borderColor = [UIColor grayColor];
+    self.borderWidth = 1;
 	
 	return self;
 }

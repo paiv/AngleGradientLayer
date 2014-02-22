@@ -13,9 +13,7 @@
 {
 	if (!(self = [super initWithFrame:frame]))
 		return nil;
-	
-	self.backgroundColor = [UIColor whiteColor];
-	
+		
 	NSMutableArray *colors = [[NSMutableArray alloc] initWithCapacity:4];
 	
 	[colors addObject:(id)[UIColor colorWithRed:1 green:0 blue:0 alpha:1].CGColor];
@@ -28,8 +26,7 @@
 	
 	self.colors = colors;
 	
-	self.layer.cornerRadius = CGRectGetWidth(self.bounds) / 2;
-	self.clipsToBounds = YES;
+	[self applyRoundMask];
 	self.transform = CGAffineTransformMakeRotation(-M_PI_2);
 	
 	return self;

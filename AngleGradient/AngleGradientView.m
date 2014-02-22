@@ -29,7 +29,15 @@
 #import "AngleGradientView.h"
 #import "AngleGradientLayer.h"
 
+@interface AngleGradientView ()
+
+@property (strong, nonatomic) CALayer *maskLayer;
+
+@end
+
 @implementation AngleGradientView
+
+@synthesize outlineBezierPath = _outlineBezierPath;
 
 -(NSArray*)colors
 {
@@ -65,5 +73,84 @@
     return _angleGradientLayer;
 }
 
+-(void)setMaskBezierPath:(UIBezierPath *)maskBezierPath
+{
+    _maskBezierPath = maskBezierPath;
+    
+    CAShapeLayer *maskLayer = [CAShapeLayer layer];
+    maskLayer.path = maskBezierPath.CGPath;
+    maskLayer.fillRule = kCAFillRuleEvenOdd;
+    maskLayer.fillColor = [UIColor grayColor].CGColor;
+    self.maskLayer = maskLayer;
+}
+
+-(void)setMaskLayer:(CALayer *)maskLayer
+{
+    [self.maskLayer removeFromSuperlayer];
+    _maskLayer = maskLayer;
+    [self.angleGradientLayer setMask:_maskLayer];
+}
+
+-(void)setOutlineBezierPath:(UIBezierPath *)outlineBezierPath
+{
+    [self setOutlineBezierPath:outlineBezierPath strokeColor:[UIColor blackColor] lineWidth:1];
+}
+
+-(void)setOutlineBezierPath:(UIBezierPath *)outlineBezierPath
+                strokeColor:(UIColor*)strokeColor
+                  lineWidth:(CGFloat)lineWidth
+{
+    _outlineBezierPath = outlineBezierPath;
+    
+    CAShapeLayer *outlineShapeLayer = [CAShapeLayer layer];
+    outlineShapeLayer.path = outlineBezierPath.CGPath;
+    outlineShapeLayer.strokeColor = strokeColor.CGColor;
+    outlineShapeLayer.fillColor = [UIColor clearColor].CGColor;
+    outlineShapeLayer.lineWidth = lineWidth;
+    
+    self.outlineLayer = outlineShapeLayer;
+}
+
+-(UIBezierPath*)outlineBezierPath
+{
+    if(!_outlineBezierPath)
+        _outlineBezierPath = [self.maskBezierPath copy];
+    
+    return _outlineBezierPath;
+}
+
+-(void)setOutlineLayer:(CAShapeLayer *)outlineLayer
+{
+    [self.outlineLayer removeFromSuperlayer];
+    _outlineLayer = outlineLayer;
+    [self.layer addSublayer:_outlineLayer];
+}
+
+-(void)applyRoundMask
+{
+    self.maskBezierPath = [UIBezierPath bezierPathWithOvalInRect:self.bounds];
+}
+
+-(void)setBorderColor:(UIColor *)borderColor
+{
+    _borderColor = borderColor;
+    if(self.maskBezierPath)
+        [self setOutlineBezierPath:self.outlineBezierPath
+                       strokeColor:borderColor
+                         lineWidth:self.outlineLayer.lineWidth];
+    else
+        self.layer.borderColor = borderColor.CGColor;
+}
+
+-(void)setBorderWidth:(CGFloat)borderWidth
+{
+    _borderWidth = borderWidth;
+    if(self.maskBezierPath)
+        [self setOutlineBezierPath:self.outlineBezierPath
+                       strokeColor:[UIColor colorWithCGColor:self.outlineLayer.strokeColor]
+                         lineWidth:borderWidth];
+    else
+        self.layer.borderWidth = borderWidth;
+}
 
 @end

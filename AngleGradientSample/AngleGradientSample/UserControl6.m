@@ -14,9 +14,7 @@
 {
 	if (!(self = [super initWithFrame:frame]))
 		return nil;
-	
-	self.backgroundColor = [UIColor clearColor];
-	
+		
 	NSMutableArray *colors = [[NSMutableArray alloc] initWithCapacity:4];
 	NSMutableArray *locations = [[NSMutableArray alloc] initWithCapacity:16];
 	
