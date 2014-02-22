@@ -5,16 +5,9 @@
 //  Created by Pavel Ivashkov on 2012-02-12.
 //
 
-#import "AngleGradientLayer.h"
 #import "UserControl2.h"
 
-
 @implementation UserControl2
-
-+ (Class)layerClass
-{
-	return [AngleGradientLayer class];
-}
 
 - (id)initWithFrame:(CGRect)frame
 {
@@ -36,13 +29,12 @@
 	[colors addObject:(id)[UIColor colorWithWhite:0.55 alpha:1].CGColor];
 	[colors addObject:(id)[UIColor colorWithWhite:0.65 alpha:1].CGColor];
 	
-	AngleGradientLayer *l = (AngleGradientLayer *)self.layer;
-	l.colors = colors;
+	self.colors = colors;
 	
-	l.cornerRadius = CGRectGetWidth(self.bounds) / 2;
+	self.layer.cornerRadius = CGRectGetWidth(self.bounds) / 2;
 	self.clipsToBounds = YES;
-	l.borderColor = [UIColor colorWithWhite:0.55 alpha:1].CGColor;
-	l.borderWidth = 1;
+	self.layer.borderColor = [UIColor colorWithWhite:0.55 alpha:1].CGColor;
+	self.layer.borderWidth = 1;
 	
 	return self;
 }

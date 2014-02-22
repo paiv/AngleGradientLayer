@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		08D45AB418B8F22800B7155D /* AngleGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 08D45AB318B8F22800B7155D /* AngleGradientView.m */; };
 		C40F40D614E71A7B00566C8F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C40F40D514E71A7B00566C8F /* UIKit.framework */; };
 		C40F40D814E71A7B00566C8F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C40F40D714E71A7B00566C8F /* Foundation.framework */; };
 		C40F40DA14E71A7B00566C8F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C40F40D914E71A7B00566C8F /* CoreGraphics.framework */; };
@@ -26,6 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		08D45AB218B8F22800B7155D /* AngleGradientView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AngleGradientView.h; sourceTree = "<group>"; };
+		08D45AB318B8F22800B7155D /* AngleGradientView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AngleGradientView.m; sourceTree = "<group>"; };
 		C40F40D114E71A7B00566C8F /* AngleGradientSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AngleGradientSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C40F40D514E71A7B00566C8F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C40F40D714E71A7B00566C8F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -149,6 +152,8 @@
 			children = (
 				C4B07AEB176355AE004FA222 /* AngleGradientLayer.h */,
 				C4B07AEC176355AE004FA222 /* AngleGradientLayer.m */,
+				08D45AB218B8F22800B7155D /* AngleGradientView.h */,
+				08D45AB318B8F22800B7155D /* AngleGradientView.m */,
 			);
 			name = AngleGradient;
 			path = ../AngleGradient;
@@ -219,6 +224,7 @@
 			files = (
 				C40F40E214E71A7B00566C8F /* main.m in Sources */,
 				C40F40E614E71A7B00566C8F /* AppDelegate.m in Sources */,
+				08D45AB418B8F22800B7155D /* AngleGradientView.m in Sources */,
 				C40F40F314E71B3800566C8F /* SampleController.m in Sources */,
 				C40F40F814E71D0700566C8F /* UserControl1.m in Sources */,
 				C40F410214E75C9A00566C8F /* UserControl2.m in Sources */,

@@ -5,6 +5,8 @@
 //  Created by Pavel Ivashkov on 2012-02-12.
 //
 
-@interface UserControl1 : UIView
+#import "AngleGradientView.h"
+
+@interface UserControl1 : AngleGradientView
 
 @end

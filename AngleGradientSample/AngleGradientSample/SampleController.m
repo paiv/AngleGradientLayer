@@ -17,7 +17,7 @@
 
 @interface SampleController()
 
-@property(strong, nonatomic) UIControl *uc5;
+@property(strong, nonatomic) UIView *uc5;
 
 @end
 
