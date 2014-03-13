@@ -93,7 +93,7 @@ static void angleGradient(byte* data, int w, int h, int* colors, int colorCount,
 	int bpp = 4 * bitsPerComponent / 8;
 	int byteCount = w * h * bpp;
 	
-	int colorCount = self.colors.count;
+	int colorCount = (int)self.colors.count;
 	int locationCount = 0;
 	int* colors = NULL;
 	float* locations = NULL;
@@ -125,7 +125,7 @@ static void angleGradient(byte* data, int w, int h, int* colors, int colorCount,
 		}
 	}
 	if (self.locations.count > 0 && self.locations.count == colorCount) {
-		locationCount = self.locations.count;
+		locationCount = (int)self.locations.count;
 		locations = calloc(locationCount, sizeof(locations[0]));
 		float *p = locations;
 		for (NSNumber *n in self.locations) {
