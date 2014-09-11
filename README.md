@@ -1,14 +1,36 @@
-h2. AngleGradientLayer
+# AngleGradientLayer
 
-*AngleGradientLayer* is a *CALayer* implementation of angle gradient.
+**AngleGradientLayer** is a **CALayer** implementation of angle gradient.
 
-!https://github.com/paiv/AngleGradientLayer/raw/master/screenshot.png(screenshot)!
+![screenshot](https://github.com/paiv/AngleGradientLayer/raw/master/screenshot.png)
 
-h2. Sample usage with UIView
+## [Swift] Using in your code
+
+```swift
+class MyView: UIView {
+
+    override class func layerClass() -> AnyClass {
+        return AngleGradientLayer.self
+    }
+
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+
+        let l: AngleGradientLayer = self.layer as AngleGradientLayer
+        let colors: Array<AnyObject> = [
+            UIColor(red: 0, green: 0, blue: 0.5, alpha: 1).CGColor,
+            UIColor(red: 1, green: 1, blue: 0.4, alpha: 1).CGColor]
+        l.colors = colors
+    }
+}
+```
+
+## [Objective-C] Using in your code
 
 (See demo project for more.)
 
-bc.. #import "AngleGradientLayer.h"
+```objective-c
+#import "AngleGradientLayer.h"
 
 @interface MyView : UIView
 @end
@@ -35,3 +57,4 @@ bc.. #import "AngleGradientLayer.h"
 }
 
 @end
+```
