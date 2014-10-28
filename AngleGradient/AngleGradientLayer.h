@@ -45,4 +45,6 @@
 
 @property(copy) NSArray *locations;
 
++ (CGImageRef)newImageGradientInRect:(CGRect)rect colors:(NSArray *)colors locations:(NSArray *)locations;
+
 @end
