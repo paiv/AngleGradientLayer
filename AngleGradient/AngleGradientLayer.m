@@ -85,15 +85,15 @@ static void angleGradient(byte* data, int w, int h, int* colors, int colorCount,
 	CGImageRelease(img);
 }
 
-- (CGImageRef)newImageGradientInRect:(CGRect)rect
++ (CGImageRef)newImageGradientInRect:(CGRect)theRect colors:(NSArray *)theColors locations:(NSArray *)theLocations
 {
-	int w = CGRectGetWidth(rect);
-	int h = CGRectGetHeight(rect);
+	int w = CGRectGetWidth(theRect);
+	int h = CGRectGetHeight(theRect);
 	int bitsPerComponent = 8;
 	int bpp = 4 * bitsPerComponent / 8;
 	int byteCount = w * h * bpp;
 	
-	int colorCount = (int)self.colors.count;
+	int colorCount = (int)theColors.count;
 	int locationCount = 0;
 	int* colors = NULL;
 	float* locations = NULL;
@@ -101,7 +101,7 @@ static void angleGradient(byte* data, int w, int h, int* colors, int colorCount,
 	if (colorCount > 0) {
 		colors = calloc(colorCount, bpp);
 		int *p = colors;
-		for (id cg in self.colors) {
+		for (id cg in theColors) {
 			CGColorRef c = BRIDGE_CAST(CGColorRef)cg;
 			float r, g, b, a;
 			
@@ -124,11 +124,11 @@ static void angleGradient(byte* data, int w, int h, int* colors, int colorCount,
 			*p++ = RGBAF(r, g, b, a);
 		}
 	}
-	if (self.locations.count > 0 && self.locations.count == colorCount) {
-		locationCount = (int)self.locations.count;
+	if (theLocations.count > 0 && (int)theLocations.count == colorCount) {
+		locationCount = (int)theLocations.count;
 		locations = calloc(locationCount, sizeof(locations[0]));
 		float *p = locations;
-		for (NSNumber *n in self.locations) {
+		for (NSNumber *n in theLocations) {
 			*p++ = [n floatValue];
 		}
 	}
@@ -147,6 +147,11 @@ static void angleGradient(byte* data, int w, int h, int* colors, int colorCount,
 	CGContextRelease(ctx);
 	free(data);
 	return img;
+}
+
+- (CGImageRef)newImageGradientInRect:(CGRect)rect
+{
+    return [[self class] newImageGradientInRect:rect colors:self.colors locations:self.locations];
 }
 
 @end
