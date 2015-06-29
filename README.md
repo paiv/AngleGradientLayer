@@ -4,9 +4,19 @@
 
 ![screenshot](https://github.com/paiv/AngleGradientLayer/raw/master/screenshot.png)
 
+## Installing
+
+[![cocoapods](https://img.shields.io/cocoapods/v/AngleGradientLayer.svg)](https://cocoapods.org/)
+
+```ruby
+pod 'AngleGradientLayer', '~> 1.0'
+```
+
 ## [Swift] Using in your code
 
 ```swift
+import AngleGradientLayer
+
 class MyView: UIView {
 
     override class func layerClass() -> AnyClass {
@@ -16,11 +26,10 @@ class MyView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
 
-        let l: AngleGradientLayer = self.layer as AngleGradientLayer
-        let colors: Array<AnyObject> = [
+        let l: AngleGradientLayer = self.layer as! AngleGradientLayer
+        l.colors = [
             UIColor(red: 0, green: 0, blue: 0.5, alpha: 1).CGColor,
             UIColor(red: 1, green: 1, blue: 0.4, alpha: 1).CGColor]
-        l.colors = colors
     }
 }
 ```
@@ -58,3 +67,13 @@ class MyView: UIView {
 
 @end
 ```
+
+## Notes
+
+When working with semi-transparent views, be sure to set `backgroundColor` property on the layer's view
+
+```swift
+myview.backgroundColor = UIColor.clearColor()
+```
+
+`backgroundColor` by default has `nil` value, blending to black color.

@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'AngleGradientLayer'
-  s.version      = '1.2.1'
+  s.version      = '1.2.2'
   s.summary      = 'Objective-C angle gradients for iOS.'
   s.homepage     = 'https://github.com/paiv/AngleGradientLayer'
   s.screenshots  = 'https://raw.github.com/paiv/AngleGradientLayer/master/screenshot.png'
