@@ -87,21 +87,26 @@ static void angleGradient(byte* data, int w, int h, int* colors, int colorCount,
 
 - (CGImageRef)newImageGradientInRect:(CGRect)rect
 {
+    return [[self class] newImageGradientInRect:rect colors:self.colors locations:self.locations];
+}
+
++ (CGImageRef)newImageGradientInRect:(CGRect)rect colors:(NSArray *)colors locations:(NSArray *)locations
+{
 	int w = CGRectGetWidth(rect);
 	int h = CGRectGetHeight(rect);
 	int bitsPerComponent = 8;
 	int bpp = 4 * bitsPerComponent / 8;
 	int byteCount = w * h * bpp;
 	
-	int colorCount = (int)self.colors.count;
-	int locationCount = 0;
-	int* colors = NULL;
-	float* locations = NULL;
+	int colorCount = (int)colors.count;
+	int locationCount = (int)locations.count;
+	int* cols = NULL;
+	float* locs = NULL;
 	
 	if (colorCount > 0) {
-		colors = calloc(colorCount, bpp);
-		int *p = colors;
-		for (id cg in self.colors) {
+		cols = calloc(colorCount, bpp);
+		int *p = cols;
+		for (id cg in colors) {
 			CGColorRef c = BRIDGE_CAST(CGColorRef)cg;
 			float r, g, b, a;
 			
@@ -124,20 +129,19 @@ static void angleGradient(byte* data, int w, int h, int* colors, int colorCount,
 			*p++ = RGBAF(r, g, b, a);
 		}
 	}
-	if (self.locations.count > 0 && self.locations.count == colorCount) {
-		locationCount = (int)self.locations.count;
-		locations = calloc(locationCount, sizeof(locations[0]));
-		float *p = locations;
-		for (NSNumber *n in self.locations) {
+	if (locationCount > 0 && locationCount == colorCount) {
+		locs = calloc(locationCount, sizeof(locs[0]));
+		float *p = locs;
+		for (NSNumber *n in locations) {
 			*p++ = [n floatValue];
 		}
 	}
 	
 	byte* data = malloc(byteCount);
-	angleGradient(data, w, h, colors, colorCount, locations, locationCount);
+	angleGradient(data, w, h, cols, colorCount, locs, locationCount);
 	
-	if (colors) free(colors);
-	if (locations) free(locations);
+	if (cols) free(cols);
+	if (locs) free(locs);
 	
 	CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
 	CGBitmapInfo bitmapInfo = kCGImageAlphaPremultipliedLast | kCGBitmapByteOrder32Little;
