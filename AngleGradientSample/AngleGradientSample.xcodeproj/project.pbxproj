@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		003B99E8A8DA00D2889AEC0B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F84AA0F39DD9B225DCB04EB0 /* libPods.a */; };
 		C40F40D614E71A7B00566C8F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C40F40D514E71A7B00566C8F /* UIKit.framework */; };
 		C40F40D814E71A7B00566C8F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C40F40D714E71A7B00566C8F /* Foundation.framework */; };
 		C40F40DA14E71A7B00566C8F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C40F40D914E71A7B00566C8F /* CoreGraphics.framework */; };
@@ -21,11 +22,23 @@
 		C40F410814E7663100566C8F /* UserControl4.m in Sources */ = {isa = PBXBuildFile; fileRef = C40F410714E7663100566C8F /* UserControl4.m */; };
 		C40F410C14E7693400566C8F /* UserControl5.m in Sources */ = {isa = PBXBuildFile; fileRef = C40F410B14E7693400566C8F /* UserControl5.m */; };
 		C42DE8FE1762632700006619 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C42DE8FD1762632700006619 /* Default-568h@2x.png */; };
+		C45ACB1D1B41DE8800D71D7C /* AngleGradientSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C45ACB1C1B41DE8800D71D7C /* AngleGradientSampleTests.m */; };
 		C49C2FB314E7E9D200E36420 /* UserControl6.m in Sources */ = {isa = PBXBuildFile; fileRef = C49C2FB214E7E9D200E36420 /* UserControl6.m */; };
-		C4B07AED176355AE004FA222 /* AngleGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = C4B07AEC176355AE004FA222 /* AngleGradientLayer.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		C45ACB231B41DEEC00D71D7C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C40F40C814E71A7A00566C8F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C40F40D014E71A7A00566C8F;
+			remoteInfo = AngleGradientSample;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		76D72F111AD2A8EBE12C428E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		7F8273EDAA850DF02B07BEC9 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		C40F40D114E71A7B00566C8F /* AngleGradientSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AngleGradientSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C40F40D514E71A7B00566C8F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C40F40D714E71A7B00566C8F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -50,10 +63,12 @@
 		C40F410A14E7693400566C8F /* UserControl5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserControl5.h; sourceTree = "<group>"; };
 		C40F410B14E7693400566C8F /* UserControl5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserControl5.m; sourceTree = "<group>"; };
 		C42DE8FD1762632700006619 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
+		C45ACB181B41DE8700D71D7C /* AngleGradientSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AngleGradientSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C45ACB1B1B41DE8800D71D7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C45ACB1C1B41DE8800D71D7C /* AngleGradientSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AngleGradientSampleTests.m; sourceTree = "<group>"; };
 		C49C2FB114E7E9D200E36420 /* UserControl6.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserControl6.h; sourceTree = "<group>"; };
 		C49C2FB214E7E9D200E36420 /* UserControl6.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserControl6.m; sourceTree = "<group>"; };
-		C4B07AEB176355AE004FA222 /* AngleGradientLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AngleGradientLayer.h; sourceTree = "<group>"; };
-		C4B07AEC176355AE004FA222 /* AngleGradientLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AngleGradientLayer.m; sourceTree = "<group>"; };
+		F84AA0F39DD9B225DCB04EB0 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,19 +80,37 @@
 				C40F40D814E71A7B00566C8F /* Foundation.framework in Frameworks */,
 				C40F40DA14E71A7B00566C8F /* CoreGraphics.framework in Frameworks */,
 				C40F40F514E71C1600566C8F /* QuartzCore.framework in Frameworks */,
+				003B99E8A8DA00D2889AEC0B /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C45ACB151B41DE8700D71D7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4616A104C572A3B0EABE6C5B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7F8273EDAA850DF02B07BEC9 /* Pods.debug.xcconfig */,
+				76D72F111AD2A8EBE12C428E /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C40F40C614E71A7A00566C8F = {
 			isa = PBXGroup;
 			children = (
-				C4B07AEA176355AE004FA222 /* AngleGradient */,
 				C40F40DB14E71A7B00566C8F /* AngleGradientSample */,
+				C45ACB191B41DE8800D71D7C /* AngleGradientSampleTests */,
 				C40F40D414E71A7B00566C8F /* Frameworks */,
 				C40F40D214E71A7B00566C8F /* Products */,
+				4616A104C572A3B0EABE6C5B /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -85,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				C40F40D114E71A7B00566C8F /* AngleGradientSample.app */,
+				C45ACB181B41DE8700D71D7C /* AngleGradientSampleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -96,6 +130,7 @@
 				C40F40D714E71A7B00566C8F /* Foundation.framework */,
 				C40F40D914E71A7B00566C8F /* CoreGraphics.framework */,
 				C40F40F414E71C1600566C8F /* QuartzCore.framework */,
+				F84AA0F39DD9B225DCB04EB0 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -144,14 +179,21 @@
 			name = Samples;
 			sourceTree = "<group>";
 		};
-		C4B07AEA176355AE004FA222 /* AngleGradient */ = {
+		C45ACB191B41DE8800D71D7C /* AngleGradientSampleTests */ = {
 			isa = PBXGroup;
 			children = (
-				C4B07AEB176355AE004FA222 /* AngleGradientLayer.h */,
-				C4B07AEC176355AE004FA222 /* AngleGradientLayer.m */,
+				C45ACB1C1B41DE8800D71D7C /* AngleGradientSampleTests.m */,
+				C45ACB1A1B41DE8800D71D7C /* Supporting Files */,
 			);
-			name = AngleGradient;
-			path = ../AngleGradient;
+			path = AngleGradientSampleTests;
+			sourceTree = "<group>";
+		};
+		C45ACB1A1B41DE8800D71D7C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C45ACB1B1B41DE8800D71D7C /* Info.plist */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,9 +203,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C40F40E914E71A7B00566C8F /* Build configuration list for PBXNativeTarget "AngleGradientSample" */;
 			buildPhases = (
+				E0CB3F1B846FA6B80459F9CC /* Check Pods Manifest.lock */,
 				C40F40CD14E71A7A00566C8F /* Sources */,
 				C40F40CE14E71A7A00566C8F /* Frameworks */,
 				C40F40CF14E71A7A00566C8F /* Resources */,
+				B94F94CF150089EB86C905CC /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -174,14 +218,38 @@
 			productReference = C40F40D114E71A7B00566C8F /* AngleGradientSample.app */;
 			productType = "com.apple.product-type.application";
 		};
+		C45ACB171B41DE8700D71D7C /* AngleGradientSampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C45ACB221B41DE8800D71D7C /* Build configuration list for PBXNativeTarget "AngleGradientSampleTests" */;
+			buildPhases = (
+				C45ACB141B41DE8700D71D7C /* Sources */,
+				C45ACB151B41DE8700D71D7C /* Frameworks */,
+				C45ACB161B41DE8700D71D7C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C45ACB241B41DEEC00D71D7C /* PBXTargetDependency */,
+			);
+			name = AngleGradientSampleTests;
+			productName = AngleGradientSampleTests;
+			productReference = C45ACB181B41DE8700D71D7C /* AngleGradientSampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		C40F40C814E71A7A00566C8F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0510;
-				ORGANIZATIONNAME = "Archer Software";
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = paiv;
+				TargetAttributes = {
+					C45ACB171B41DE8700D71D7C = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = C40F40D014E71A7A00566C8F;
+					};
+				};
 			};
 			buildConfigurationList = C40F40CB14E71A7A00566C8F /* Build configuration list for PBXProject "AngleGradientSample" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -196,6 +264,7 @@
 			projectRoot = "";
 			targets = (
 				C40F40D014E71A7A00566C8F /* AngleGradientSample */,
+				C45ACB171B41DE8700D71D7C /* AngleGradientSampleTests */,
 			);
 		};
 /* End PBXProject section */
@@ -210,7 +279,47 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C45ACB161B41DE8700D71D7C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B94F94CF150089EB86C905CC /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0CB3F1B846FA6B80459F9CC /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C40F40CD14E71A7A00566C8F /* Sources */ = {
@@ -226,11 +335,26 @@
 				C40F410814E7663100566C8F /* UserControl4.m in Sources */,
 				C40F410C14E7693400566C8F /* UserControl5.m in Sources */,
 				C49C2FB314E7E9D200E36420 /* UserControl6.m in Sources */,
-				C4B07AED176355AE004FA222 /* AngleGradientLayer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C45ACB141B41DE8700D71D7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C45ACB1D1B41DE8800D71D7C /* AngleGradientSampleTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C45ACB241B41DEEC00D71D7C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C40F40D014E71A7A00566C8F /* AngleGradientSample */;
+			targetProxy = C45ACB231B41DEEC00D71D7C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		C40F40DE14E71A7B00566C8F /* InfoPlist.strings */ = {
@@ -254,11 +378,14 @@
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -274,7 +401,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -290,10 +417,13 @@
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -303,7 +433,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -312,6 +442,7 @@
 		};
 		C40F40EA14E71A7B00566C8F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F8273EDAA850DF02B07BEC9 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AngleGradientSample/AngleGradientSample-Prefix.pch";
@@ -324,6 +455,7 @@
 		};
 		C40F40EB14E71A7B00566C8F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76D72F111AD2A8EBE12C428E /* Pods.release.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AngleGradientSample/AngleGradientSample-Prefix.pch";
@@ -331,6 +463,62 @@
 				INFOPLIST_FILE = "AngleGradientSample/AngleGradientSample-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C45ACB201B41DE8800D71D7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = AngleGradientSampleTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AngleGradientSample.app/AngleGradientSample";
+			};
+			name = Debug;
+		};
+		C45ACB211B41DE8800D71D7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = AngleGradientSampleTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AngleGradientSample.app/AngleGradientSample";
 			};
 			name = Release;
 		};
@@ -354,6 +542,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		C45ACB221B41DE8800D71D7C /* Build configuration list for PBXNativeTarget "AngleGradientSampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C45ACB201B41DE8800D71D7C /* Debug */,
+				C45ACB211B41DE8800D71D7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

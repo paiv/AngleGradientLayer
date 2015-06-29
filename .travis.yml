@@ -1,0 +1,5 @@
+language: objective-c
+podfile: AngleGradientSample/Podfile
+xcode_workspace: AngleGradientSample/AngleGradientSample.xcworkspace
+xcode_scheme: AngleGradientSample
+xcode_sdk: iphonesimulator
