@@ -77,4 +77,4 @@ When working with semi-transparent views, be sure to set `backgroundColor` prope
 myview.backgroundColor = UIColor.clearColor()
 ```
 
-`backgroundColor` by default has `nil` value, blending to black color.
+`backgroundColor` by default is `nil`, blending to black color.
