@@ -45,4 +45,9 @@
 
 @property(copy) NSArray *locations;
 
+
+/* The core method generating gradient image.
+ */
++ (CGImageRef)newImageGradientInRect:(CGRect)rect colors:(NSArray *)colors locations:(NSArray *)locations;
+
 @end
