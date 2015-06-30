@@ -1,7 +1,7 @@
-# AngleGradientLayer
-
 [![cocoapods](https://img.shields.io/cocoapods/v/AngleGradientLayer.svg)](https://cocoapods.org/pods/AngleGradientLayer)
 [![build status](https://img.shields.io/travis/paiv/AngleGradientLayer.svg)](https://travis-ci.org/paiv/AngleGradientLayer)
+
+# AngleGradientLayer
 
 **AngleGradientLayer** is a **CALayer** implementation of angle gradient.
 
