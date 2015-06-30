@@ -1,4 +1,6 @@
 # AngleGradientLayer
+
+[![cocoapods](https://img.shields.io/cocoapods/v/AngleGradientLayer.svg)](https://cocoapods.org/pods/AngleGradientLayer)
 [![build status](https://img.shields.io/travis/paiv/AngleGradientLayer.svg)](https://travis-ci.org/paiv/AngleGradientLayer)
 
 **AngleGradientLayer** is a **CALayer** implementation of angle gradient.
@@ -6,8 +8,6 @@
 ![screenshot](https://github.com/paiv/AngleGradientLayer/raw/master/screenshot.png)
 
 ## Installing
-
-[![cocoapods](https://img.shields.io/cocoapods/v/AngleGradientLayer.svg)](https://cocoapods.org/)
 
 ```ruby
 pod 'AngleGradientLayer', '~> 1.0'
