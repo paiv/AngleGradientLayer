@@ -7,7 +7,8 @@ Pod::Spec.new do |s|
   s.license      = 'MIT'
   s.author       = 'Pavel Ivashkov'
   s.source       = { :git => 'https://github.com/paiv/AngleGradientLayer.git', :tag => "v#{s.version}" }
-  s.platform     = :ios, '3.2'
+  s.ios.deployment_target = '3.2'
+  s.tvos.deployment_target = '9.0'
   s.source_files = 'AngleGradient/*.{h,m}'
   s.frameworks   = 'CoreGraphics', 'QuartzCore'
 end
