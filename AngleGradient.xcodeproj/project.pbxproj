@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EDAE631B1C54EFC8006D0FCA /* AngleGradientLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = EDAE63191C54EFC8006D0FCA /* AngleGradientLayer.h */; };
+		EDAE631B1C54EFC8006D0FCA /* AngleGradientLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = EDAE63191C54EFC8006D0FCA /* AngleGradientLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EDAE631C1C54EFC8006D0FCA /* AngleGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = EDAE631A1C54EFC8006D0FCA /* AngleGradientLayer.m */; };
 		EDC151631C54EF1700342071 /* AngleGradient.h in Headers */ = {isa = PBXBuildFile; fileRef = EDC151621C54EF1700342071 /* AngleGradient.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
