@@ -45,6 +45,9 @@
 
 @property(copy) NSArray *locations;
 
+//Start angle. Default is 0.
+
+@property (nonatomic) CGFloat startAngle;
 
 /* The core method generating gradient image.
  */
