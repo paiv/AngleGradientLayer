@@ -78,6 +78,14 @@ static void angleGradient(byte* data, int w, int h, int* colors, int colorCount,
 {
 	CGContextSetFillColorWithColor(ctx, self.backgroundColor);
     CGContextRotateCTM(ctx, self.startAngle);
+    if (self.clockWise)
+    {
+        CGAffineTransform flipVertical = CGAffineTransformMake(
+                                                               1, 0, 0, -1, 0,
+                                                               self.bounds.size.width
+                                                               );
+        CGContextConcatCTM(ctx, flipVertical);
+    }
 	CGRect rect = CGContextGetClipBoundingBox(ctx);
 	CGContextFillRect(ctx, rect);
 
