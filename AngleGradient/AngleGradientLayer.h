@@ -49,6 +49,9 @@
 
 @property (nonatomic) CGFloat startAngle;
 
+//Set direction. Default is NO ( counter clockwise)
+@property (nonatomic) bool clockWise;
+
 /* The core method generating gradient image.
  */
 + (CGImageRef)newImageGradientInRect:(CGRect)rect colors:(NSArray *)colors locations:(NSArray *)locations;
