@@ -1,3 +1,8 @@
+## Deprecation
+
+This library is deprecated in favor of `iOS 12` [CAGradientLayer](https://developer.apple.com/documentation/quartzcore/cagradientlayer) layer type [.conic](https://developer.apple.com/documentation/quartzcore/cagradientlayertype)
+
+
 [![cocoapods](https://img.shields.io/cocoapods/v/AngleGradientLayer.svg)](https://cocoapods.org/pods/AngleGradientLayer)
 [![build status](https://img.shields.io/travis/paiv/AngleGradientLayer.svg)](https://travis-ci.org/paiv/AngleGradientLayer)
 
