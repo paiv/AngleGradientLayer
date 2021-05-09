@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sample View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="SampleViewController" customModule="ConicSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wa4-Cw-chW" customClass="UserGradient1" customModule="ConicSample" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gpa-Vr-ZqC" customClass="UserGradient2" customModule="ConicSample" customModuleProvider="target">
+                                <rect key="frame" x="73" y="364" width="88" height="88"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="88" id="YZB-6Q-ffy"/>
+                                    <constraint firstAttribute="width" constant="88" id="mdF-kC-C5Y"/>
+                                </constraints>
+                            </view>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aYR-hx-ahA" customClass="UserGradient3" customModule="ConicSample" customModuleProvider="target">
+                                <rect key="frame" x="19" y="400" width="66" height="66"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="66" id="zPS-Ve-yjv"/>
+                                    <constraint firstAttribute="width" constant="66" id="zRO-Mt-GZU"/>
+                                </constraints>
+                            </view>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vnH-Ce-XIL" customClass="UserGradient4" customModule="ConicSample" customModuleProvider="target">
+                                <rect key="frame" x="194" y="258" width="120" height="120"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="hM7-GX-wBF"/>
+                                    <constraint firstAttribute="height" constant="120" id="kSV-WN-Vg4"/>
+                                </constraints>
+                            </view>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xek-xv-PxH" customClass="UserGradient5" customModule="ConicSample" customModuleProvider="target">
+                                <rect key="frame" x="138" y="331" width="100" height="100"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="BdW-OQ-A1t"/>
+                                    <constraint firstAttribute="height" constant="100" id="i8i-ue-ifd"/>
+                                </constraints>
+                            </view>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XDF-Yq-0dr" customClass="UserGradient6" customModule="ConicSample" customModuleProvider="target">
+                                <rect key="frame" x="171" y="131" width="135" height="135"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="135" id="JKl-he-aEs"/>
+                                    <constraint firstAttribute="width" constant="135" id="RkP-tV-hoY"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Wa4-Cw-chW" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="AJi-4u-0UD"/>
+                            <constraint firstItem="XDF-Yq-0dr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="centerX" constant="11" id="Ejk-RQ-wNI"/>
+                            <constraint firstItem="Wa4-Cw-chW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Fle-cE-MLF"/>
+                            <constraint firstAttribute="trailing" secondItem="Wa4-Cw-chW" secondAttribute="trailing" id="Ghy-Wx-sE7"/>
+                            <constraint firstItem="gpa-Vr-ZqC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="80" id="Hjv-wP-EUm"/>
+                            <constraint firstItem="aYR-hx-ahA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="centerX" constant="-141" id="IOI-4R-REE"/>
+                            <constraint firstAttribute="bottom" secondItem="Wa4-Cw-chW" secondAttribute="bottom" id="Lw7-Hq-Wm1"/>
+                            <constraint firstItem="xek-xv-PxH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="47" id="MTg-m4-LJM"/>
+                            <constraint firstItem="vnH-Ce-XIL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="centerX" constant="34" id="QQY-3t-md4"/>
+                            <constraint firstItem="vnH-Ce-XIL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-26" id="Wk2-BV-6Zw"/>
+                            <constraint firstItem="xek-xv-PxH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="centerX" constant="-22" id="enV-Y6-sAt"/>
+                            <constraint firstItem="aYR-hx-ahA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="116" id="m7q-Np-iYv"/>
+                            <constraint firstItem="gpa-Vr-ZqC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="centerX" constant="-87" id="pNW-5S-3cX"/>
+                            <constraint firstItem="XDF-Yq-0dr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-153" id="q6L-3k-G9c"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="35" y="104"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

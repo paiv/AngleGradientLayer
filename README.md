@@ -2,6 +2,8 @@
 
 This library is deprecated in favor of `iOS 12` [CAGradientLayer](https://developer.apple.com/documentation/quartzcore/cagradientlayer) layer type [.conic](https://developer.apple.com/documentation/quartzcore/cagradientlayertype)
 
+See [ConicSample project](ConicSample/) for `CAGradientLayer` examples ported from `AngleGradientLayer`.
+
 
 [![cocoapods](https://img.shields.io/cocoapods/v/AngleGradientLayer.svg)](https://cocoapods.org/pods/AngleGradientLayer)
 
