@@ -1,6 +1,3 @@
-[![standwithukraine](https://user-images.githubusercontent.com/196601/158214305-7c94dd27-40a7-4af6-929b-38928700938b.svg)](https://ukrainewar.carrd.co/)
-
-
 ## Deprecation
 
 This library is deprecated in favor of `iOS 12` [CAGradientLayer](https://developer.apple.com/documentation/quartzcore/cagradientlayer) layer type [.conic](https://developer.apple.com/documentation/quartzcore/cagradientlayertype)
@@ -8,6 +5,7 @@ This library is deprecated in favor of `iOS 12` [CAGradientLayer](https://develo
 See [ConicSample project](ConicSample/) for `CAGradientLayer` examples ported from `AngleGradientLayer`.
 
 
+[![standwithukraine](https://user-images.githubusercontent.com/196601/158214305-7c94dd27-40a7-4af6-929b-38928700938b.svg)](https://ukrainewar.carrd.co/)
 [![cocoapods](https://img.shields.io/cocoapods/v/AngleGradientLayer.svg)](https://cocoapods.org/pods/AngleGradientLayer)
 
 # AngleGradientLayer
